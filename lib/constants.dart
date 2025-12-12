@@ -5,12 +5,12 @@ abstract class Constants {
   static const TextStyle titleStyle = TextStyle(
     color: Constants.mainColor,
     fontWeight: FontWeight.w700,
-    fontSize: 48,
+    fontSize: 32,
     fontFamily: customFont,
   );
   static const TextStyle customText = TextStyle(
     color: Colors.black,
-    fontSize: 20,
+    fontSize: 18,
     fontWeight: FontWeight.w500,
   );
 

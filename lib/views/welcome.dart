@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_app_login_signup_pages/constants.dart';
+import 'package:mobile_app_login_signup_pages/views/login.dart';
 import 'package:mobile_app_login_signup_pages/widgets/custom_button.dart';
-import 'package:mobile_app_login_signup_pages/views/signup.dart';
+import 'signup.dart';
 
 class Welcome extends StatelessWidget {
   const Welcome({super.key});
@@ -43,13 +44,17 @@ class Welcome extends StatelessWidget {
             txt: 'Sign Up',
             txtColor: Colors.white,
             containerColor: Constants.mainColor,
-            onTap: () => Navigator.pop(
+            onTap: () => Navigator.push(
               context,
               MaterialPageRoute(builder: (context) => Signup()),
             ),
           ),
           SizedBox(height: 30),
           CustomButton(
+            onTap: () => Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Login()),
+            ),
             txt: 'Login',
             txtColor: Constants.mainColor,
             containerColor: Colors.white,
