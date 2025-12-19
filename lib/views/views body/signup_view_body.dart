@@ -65,31 +65,31 @@ class SignupViewBody extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 15,),
-          SizedBox(
-            height: 16,
-            width: MediaQuery.of(context).size.width - 60,
-            child: Expanded(
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Divider(
-                    thickness: 3,
-                    indent: 53,
-                    endIndent: 53,
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Expanded(
+                  child: Divider(
+                    thickness: 1,
                     color: Constants.mainColor,
                   ),
-                  Text(' or signup with google ' , style: TextStyle(fontSize: 8),),
-                  Divider(
-                    thickness: 3,
-                    indent: 53,
-                    endIndent: 53,
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                  child: Text(' or signup with google ' , style: TextStyle(fontSize: 8),),
+                ),
+                Expanded(
+                  child: Divider(
+                    thickness: 1,
                     color: Constants.mainColor,
                   ),
-                ],
-              ),
+                ),
+
+              ],
             ),
-          )
+          ),
         ],
     );
   }
